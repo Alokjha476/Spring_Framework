@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+ xmlns:context="http://www.springframework.org/schema/context"
+ xmlns:p= "http://www.springframework.org/schema/p"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ https://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/context/spring-context.xsd">
+ 
+<!--This is our beans--> 
+
+<bean name = "emp1" class= "com.springcore.collection.Emp">
+<property name="empName" value = "Name -Adarsh" />
+
+
+<property name="phones">
+<list>
+<value>93222229837</value>
+<value>9329234837</value>
+<value>93293242837</value>
+<null/>
+</list>
+</property>
+
+<property name="address">
+<set>
+<value>Karaura</value>
+<value>Meerganj</value>
+<value>Bareilly</value>
+</set>
+</property>
+
+ <property name="courses">
+ 
+		  <map>
+            <entry key = "Java" value = "2- Months"/>
+            <entry key = "Python" value = "30 days"/>
+            <entry key = "Maths" value = "6 Months"/>
+           
+         </map>
+ 
+ 
+ </property>
+ 
+ <property name="props">
+ 
+ <props>
+            <prop key = "one">INDIA</prop>
+            <prop key = "one">INDIA</prop>
+            <prop key = "two">Pakistan</prop>
+            <prop key = "three">USA</prop>
+            <prop key = "four">USA</prop>
+         </props>
+ 
+ </property>
+
+
+
+
+</bean>
+
+ </beans>
